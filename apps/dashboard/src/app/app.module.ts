@@ -9,12 +9,16 @@ import { ProjectsModule } from './projects/projects.module';
 import { CustomersModule } from './customers/customers.module';
 import { AppRoutingModule } from './app-routing.module';
 import { UiLoginModule } from '@workshop/ui-login';
+import { HttpClientModule } from '@angular/common/http';
+import { NxModule } from '@nrwl/angular';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    NxModule.forRoot(),
     BrowserAnimationsModule,
+    HttpClientModule,
     MaterialModule,
     UiLoginModule,
     AppRoutingModule
